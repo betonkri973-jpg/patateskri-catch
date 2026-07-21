@@ -21,7 +21,7 @@ const gameArea = document.getElementById("gameArea");
 
 // Sesler
 
-const muzik = new Audio("assets/sounds/muzik.mp3");
+const muzik = new Audio("doktor.m4a");
 const tik = new Audio("assets/sounds/tik.mp3");
 const bonus = new Audio("assets/sounds/bonus.mp3");
 const curukSes = new Audio("assets/sounds/curuk.mp3");
