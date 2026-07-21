@@ -23,7 +23,7 @@ setTimeout(() => {
 
 
 
-startBtn.onclick = function(){
+startBtn.addEventListener("click", function(){
 
     if(gameStarted) return;
 
@@ -35,7 +35,7 @@ startBtn.onclick = function(){
 
     startGame();
 
-};
+});
 
 
 
