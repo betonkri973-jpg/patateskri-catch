@@ -23,19 +23,19 @@ setTimeout(() => {
 
 
 
-startBtn.addEventListener("click", () => {
+startBtn.onclick = function(){
 
     if(gameStarted) return;
 
     gameStarted = true;
 
-    startBtn.style.display = "none";
+    startBtn.remove();
 
     music.play();
 
     startGame();
 
-});
+};
 
 
 
