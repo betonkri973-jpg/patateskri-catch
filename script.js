@@ -6,7 +6,7 @@ const scoreText = document.getElementById("score");
 const timeText = document.getElementById("time");
 const area = document.getElementById("gameArea");
 const result = document.getElementById("result");
-
+const medalText = document.getElementById("medal");
 function createTarget(){
 
     if(gameOver) return;
@@ -119,7 +119,7 @@ function endGame(){
         best=score;
     }
 
-
+    medalText.innerHTML = medal;
     result.innerHTML=
     medal+" Madalya<br>"+
     "🏆 Skor: "+score+
