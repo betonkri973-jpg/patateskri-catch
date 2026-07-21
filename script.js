@@ -1,3 +1,4 @@
+alert("Script çalıştı!");
 const loadingScreen = document.getElementById("loadingScreen");
 const menu = document.getElementById("menu");
 const game = document.getElementById("game");
