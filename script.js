@@ -29,6 +29,8 @@ startBtn.addEventListener("click", () => {
 
     gameStarted = true;
 
+    startBtn.style.display = "none";
+
     music.play();
 
     startGame();
