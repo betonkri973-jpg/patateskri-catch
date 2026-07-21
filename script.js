@@ -1,5 +1,6 @@
 let score = 0;
-let time = 30;
+const bgMusic = document.getElementById("bgMusic");
+let musicStarted = false;let time = 30;
 let gameOver = false;
 
 const scoreText = document.getElementById("score");
@@ -43,7 +44,11 @@ function createTarget(){
 
 
     target.onclick=function(){
-
+    if (!musicStarted) {
+    bgMusic.volume = 0.4;
+    bgMusic.play().catch(() => {});
+    musicStarted = true;
+    }
         score += target.value;
 
         if(score < 0){
