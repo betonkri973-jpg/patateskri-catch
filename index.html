@@ -1,58 +1,95 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PatatesKRI Catch</title>
+
+<title>PatatesKRI Oyunu</title>
+
 <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
-<div id="loadingScreen">
-    <h1>💙 BETON ARCHIVE</h1>
-    <p>sunar...</p>
+<div class="container">
+
+
+    <div class="archive">
+        BETON ARCHIVE SUNAR
+    </div>
+
+
+    <h1>
+        🥔 PATATESKRI
+    </h1>
+
+
+    <div class="info">
+
+        <div>
+            Skor:
+            <span id="score">0</span>
+        </div>
+
+
+        <div>
+            Süre:
+            <span id="time">30</span>
+        </div>
+
+    </div>
+
+
+
+    <div id="gameArea">
+
+
+        <img 
+        id="patates"
+        src="assets/images/patates.png"
+        class="item"
+        alt="Normal Patates">
+
+
+
+        <img 
+        id="patatesKri"
+        src="assets/images/patateskri.png"
+        class="item"
+        alt="PatatesKRI">
+
+
+
+        <img 
+        id="curuk"
+        src="assets/images/curuk.png"
+        class="item"
+        alt="Çürük Patates">
+
+
+    </div>
+
+
+
+
+    <button id="startBtn">
+        OYUNU BAŞLAT
+    </button>
+
+
+
+    <div id="message"></div>
+
+
 </div>
 
-<div id="menu" style="display:none;">
 
-<h1>🥔 PATATESKRI CATCH</h1>
-
-<p>Beton Archive Edition</p>
-
-<button id="startBtn">
-▶️ OYUNA BAŞLA
-</button>
-
-<button>
-🏆 REKORLAR
-</button>
-
-<button>
-❓ NASIL OYNANIR
-</button>
-
-</div>
-
-<div id="game" style="display:none;">
-
-<div class="info">
-
-<span>🏆 <b id="score">0</b></span>
-
-<span>⏳ <b id="time">30</b></span>
-
-</div>
-
-<div id="gameArea"></div>
-
-</div>
-
-<audio id="bgMusic" loop>
-<source src="doktor.m4a" type="audio/mp4">
-</audio>
 
 <script src="script.js"></script>
 
+
 </body>
-  </html>
+</html>
