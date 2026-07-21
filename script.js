@@ -25,16 +25,17 @@ function createTarget(){
         target.value = 50;
         target.classList.add("gold");
     }
-    else if(random < 0.90){
+    else if(random < 0.85){
         target.innerHTML = "💀🥔";
         target.value = -20;
         target.classList.add("bad");
     }
     else{
-        target.innerHTML = "💙 KRIIII";
-        target.value = 100;
-        target.classList.add("gold");
-    }
+    target.innerHTML = "💙 KRIIII";
+    target.value = 100;
+    target.classList.add("gold");
+    };
+    
 
 
     target.style.left = Math.random()*75+"%";
